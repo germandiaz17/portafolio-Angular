@@ -1,0 +1,86 @@
+/*IMAGEN DE FONDO*/
+body {
+    background-image: url('../assets/25777.jpg');
+    color: aliceblue;
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*ALINEACION DE TEXTOS*/
+.centrar-texto {
+    text-align: center;
+}
+
+.texto-izquierda {
+    text-align: left;
+}
+
+.texto-derecha {
+    text-align: right;
+}
+
+/*CONTENEDOR DERECHA*/
+.contenedorDerecha {
+    background: rgba(237, 27, 27, 0.5);
+}
+
+.contenedorDerechaSecundario {
+    box-shadow: 5px 5px 20px 5px rgba(10, 10, 10, 3);
+    color: rgb(3, 3, 3);
+    margin-top: 5%;
+    padding: 5%;
+    border-radius: 2%;
+    background: rgba(245, 230, 226, 0.5);
+}
+
+/*BOTONES*/
+.btnPrincipal {
+    border-radius: 2px;
+    padding: 16px 20px;
+    color: aliceblue;
+    background-color: #232323;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.btnPrincipal:hover {
+    color: aliceblue;
+}
+
+.btnPrincipal::after {
+    content: "";
+    background: rgba(237, 27, 27, 0.5);
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.3s ease;
+}
+
+.btnPrincipal:hover::after {
+    transition: all 0.3s ease-out;
+    transform: skewX(-45deg) scale(1, 1);
+}
+
+/* HOVER PARA NOMBRES */
+.hoverParrafo {
+    border-bottom: rgba(237, 27, 27, 0.5) 5px solid;
+    /* -webkit-text-stroke: 2px rgb(255, 255, 255);
+    color: transparent;  */
+}
+
+/* PORCENTAJE DE SKILLS */
+.porcentajes {
+    border-bottom: #ffffff80 5px solid;
+}
